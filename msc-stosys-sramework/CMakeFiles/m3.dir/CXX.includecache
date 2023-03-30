@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.h
+cstdint
+-
+string
+-
+
+/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/m3.cpp
+unistd.h
+-
+cstdio
+-
+cassert
+-
+cstdlib
+-
+cstring
+-
+vector
+-
+algorithm
+-
+iostream
+-
+random
+-
+fcntl.h
+-
+zns_device.h
+/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.h
+../common/utils.h
+/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.h
+
+/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.h
+cstdint
+-
+
