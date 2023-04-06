@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.cpp" "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/m1.dir/src/common/nvmeprint.cpp.o"
-  "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.cpp" "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/m1.dir/src/common/utils.cpp.o"
-  "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m1/device.cpp" "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/m1.dir/src/m1/device.cpp.o"
-  "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m1/m1.cpp" "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/m1.dir/src/m1/m1.cpp.o"
+  "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.cpp" "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/m1.dir/src/common/nvmeprint.cpp.o"
+  "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.cpp" "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/m1.dir/src/common/utils.cpp.o"
+  "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m1/device.cpp" "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/m1.dir/src/m1/device.cpp.o"
+  "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m1/m1.cpp" "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/m1.dir/src/m1/m1.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

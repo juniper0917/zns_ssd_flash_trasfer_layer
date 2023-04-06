@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
+CMAKE_SOURCE_DIR = /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
+CMAKE_BINARY_DIR = /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
 
 # Include any dependencies generated for this target.
 include CMakeFiles/stosys.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/stosys.dir/flags.make
 
 CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.o: CMakeFiles/stosys.dir/flags.make
 CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.o: src/m23-ftl/zns_device.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.o -c /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.o -c /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.cpp
 
 CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.cpp > CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.cpp > CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.i
 
 CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.cpp -o CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.cpp -o CMakeFiles/stosys.dir/src/m23-ftl/zns_device.cpp.s
 
 CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.o: CMakeFiles/stosys.dir/flags.make
 CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.o: src/common/nvmeprint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.o -c /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.o -c /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.cpp
 
 CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.cpp > CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.cpp > CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.i
 
 CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.cpp -o CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.cpp -o CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.s
 
 CMakeFiles/stosys.dir/src/common/utils.cpp.o: CMakeFiles/stosys.dir/flags.make
 CMakeFiles/stosys.dir/src/common/utils.cpp.o: src/common/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/stosys.dir/src/common/utils.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stosys.dir/src/common/utils.cpp.o -c /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/stosys.dir/src/common/utils.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stosys.dir/src/common/utils.cpp.o -c /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.cpp
 
 CMakeFiles/stosys.dir/src/common/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stosys.dir/src/common/utils.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.cpp > CMakeFiles/stosys.dir/src/common/utils.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.cpp > CMakeFiles/stosys.dir/src/common/utils.cpp.i
 
 CMakeFiles/stosys.dir/src/common/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stosys.dir/src/common/utils.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.cpp -o CMakeFiles/stosys.dir/src/common/utils.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.cpp -o CMakeFiles/stosys.dir/src/common/utils.cpp.s
 
 # Object files for target stosys
 stosys_OBJECTS = \
@@ -110,7 +110,7 @@ lib/libstosys.so.1.0.1: CMakeFiles/stosys.dir/src/common/nvmeprint.cpp.o
 lib/libstosys.so.1.0.1: CMakeFiles/stosys.dir/src/common/utils.cpp.o
 lib/libstosys.so.1.0.1: CMakeFiles/stosys.dir/build.make
 lib/libstosys.so.1.0.1: CMakeFiles/stosys.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library lib/libstosys.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library lib/libstosys.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stosys.dir/link.txt --verbose=$(VERBOSE)
 	$(CMAKE_COMMAND) -E cmake_symlink_library lib/libstosys.so.1.0.1 lib/libstosys.so.1 lib/libstosys.so
 
@@ -130,6 +130,6 @@ CMakeFiles/stosys.dir/clean:
 .PHONY : CMakeFiles/stosys.dir/clean
 
 CMakeFiles/stosys.dir/depend:
-	cd /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/stosys.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/stosys.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/stosys.dir/depend
 

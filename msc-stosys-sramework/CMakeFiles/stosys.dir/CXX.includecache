@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.cpp
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.cpp
 libnvme.h
 -
 cstdio
@@ -16,21 +16,21 @@ cinttypes
 cassert
 -
 nvmeprint.h
-/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.h
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.h
 
-/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.h
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.h
 cstdio
 -
 cinttypes
 -
 
-/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.cpp
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.cpp
 cstdint
 -
 cstdio
 -
 utils.h
-/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.h
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.h
 cassert
 -
 unistd.h
@@ -48,19 +48,19 @@ string
 chrono
 -
 
-/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.h
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.h
 cstdint
 -
 string
 -
 
-/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.cpp
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.cpp
 zns_device.h
-/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.h
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.h
 cerrno
 -
 
-/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.h
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m23-ftl/zns_device.h
 cstdint
 -
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
+CMAKE_SOURCE_DIR = /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
+CMAKE_BINARY_DIR = /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

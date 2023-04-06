@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
+CMAKE_SOURCE_DIR = /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
+CMAKE_BINARY_DIR = /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/m1.dir/clean
 CMakeFiles/m3.dir/all: CMakeFiles/stosys.dir/all
 	$(MAKE) -f CMakeFiles/m3.dir/build.make CMakeFiles/m3.dir/depend
 	$(MAKE) -f CMakeFiles/m3.dir/build.make CMakeFiles/m3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=8,9 "Built target m3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=8,9 "Built target m3"
 .PHONY : CMakeFiles/m3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/m3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/m3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 0
 .PHONY : CMakeFiles/m3.dir/rule
 
 # Convenience name for target.
@@ -107,14 +107,14 @@ CMakeFiles/m3.dir/clean:
 CMakeFiles/m2.dir/all: CMakeFiles/stosys.dir/all
 	$(MAKE) -f CMakeFiles/m2.dir/build.make CMakeFiles/m2.dir/depend
 	$(MAKE) -f CMakeFiles/m2.dir/build.make CMakeFiles/m2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=6,7 "Built target m2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=6,7 "Built target m2"
 .PHONY : CMakeFiles/m2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/m2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/m2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 0
 .PHONY : CMakeFiles/m2.dir/rule
 
 # Convenience name for target.
@@ -134,14 +134,14 @@ CMakeFiles/m2.dir/clean:
 CMakeFiles/stosys.dir/all:
 	$(MAKE) -f CMakeFiles/stosys.dir/build.make CMakeFiles/stosys.dir/depend
 	$(MAKE) -f CMakeFiles/stosys.dir/build.make CMakeFiles/stosys.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=10,11,12,13 "Built target stosys"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=10,11,12,13 "Built target stosys"
 .PHONY : CMakeFiles/stosys.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/stosys.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/stosys.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 0
 .PHONY : CMakeFiles/stosys.dir/rule
 
 # Convenience name for target.
@@ -161,14 +161,14 @@ CMakeFiles/stosys.dir/clean:
 CMakeFiles/m1.dir/all:
 	$(MAKE) -f CMakeFiles/m1.dir/build.make CMakeFiles/m1.dir/depend
 	$(MAKE) -f CMakeFiles/m1.dir/build.make CMakeFiles/m1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=1,2,3,4,5 "Built target m1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles --progress-num=1,2,3,4,5 "Built target m1"
 .PHONY : CMakeFiles/m1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/m1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/m1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/CMakeFiles 0
 .PHONY : CMakeFiles/m1.dir/rule
 
 # Convenience name for target.

@@ -231,13 +231,38 @@ int ss_nvme_device_io_with_mdts(int fd, uint32_t nsid, uint64_t slba, uint16_t n
 }
 
 int ss_nvme_device_read(int fd, uint32_t nsid, uint64_t slba, uint16_t numbers, void *buffer, uint64_t buf_size) {
-    //FIXME:
-    return -ENOSYS;
+    int ret;
+    __u16 nlb = numbers - 1;
+    __u32 data_len = numbers * 512;
+    __u32 metadata_len = 0;
+
+    if (buf_size < data_len) {
+        return -EINVAL;
+    }
+
+    ret = nvme_read(fd, nsid, slba, nlb, 0, 0, 0, 0, 0, data_len, buffer, metadata_len, NULL);
+    if (ret < 0) {
+        return ret;
+    }
+
+    return 0;
+    //return -ENOSYS;
 }
 
 int ss_nvme_device_write(int fd, uint32_t nsid, uint64_t slba, uint16_t numbers, void *buffer, uint64_t buf_size) {
-    //FIXME:
-    return -ENOSYS;
+
+	__u16 control = 0;
+__u8 dsm = 0;
+__u16 dspec = 0;
+__u32 reftag = 0;
+__u16 apptag = 0;
+__u16 appmask = 0;
+__u32 data_len = buf_size;
+void *metadata = NULL;
+__u32 metadata_len = 0;
+
+return nvme_write(fd, nsid, slba, numbers, control, dsm, dspec, reftag, apptag, appmask, data_len, buffer, metadata_len, metadata);
+	//return -ENOSYS;
 }
 
 int ss_zns_device_zone_reset(int fd, uint32_t nsid, uint64_t slba) {
@@ -247,8 +272,19 @@ int ss_zns_device_zone_reset(int fd, uint32_t nsid, uint64_t slba) {
 
 // this does not take slba because it will return that
 int ss_zns_device_zone_append(int fd, uint32_t nsid, uint64_t zslba, int numbers, void *buffer, uint32_t buf_size, uint64_t *written_slba){
-    //FIXME:
-    return -ENOSYS;
+    
+	__u32 data_len = numbers * 512;
+    __u32 metadata_len = 0;
+    __u64 result;
+
+    int res = nvme_zns_append(fd, nsid, zslba, numbers, 0, 0, 0, 0, data_len, buffer, metadata_len, NULL, &result);
+
+    if (res == 0 && written_slba != NULL) {
+        *written_slba = result;
+    }
+
+    return res;
+	//return -ENOSYS;
 }
 
 void update_lba(uint64_t &write_lba, const uint32_t lba_size, const int count){

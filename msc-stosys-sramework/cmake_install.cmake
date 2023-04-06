@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
+# Install script for directory: /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,8 +50,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/lib/libstosys.so.1.0.1"
-    "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/lib/libstosys.so.1"
+    "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/lib/libstosys.so.1.0.1"
+    "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/lib/libstosys.so.1"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstosys.so.1.0.1"
@@ -73,7 +73,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstosys.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/lib/libstosys.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/lib/libstosys.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstosys.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstosys.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -90,5 +90,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/user/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
