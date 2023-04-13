@@ -231,21 +231,17 @@ int ss_nvme_device_io_with_mdts(int fd, uint32_t nsid, uint64_t slba, uint16_t n
 }
 
 int ss_nvme_device_read(int fd, uint32_t nsid, uint64_t slba, uint16_t numbers, void *buffer, uint64_t buf_size) {
-    int ret;
     __u16 nlb = numbers - 1;
-    __u32 data_len = numbers * 512;
+    __u32 data_len = buf_size;
     __u32 metadata_len = 0;
 
     if (buf_size < data_len) {
         return -EINVAL;
     }
 
-    ret = nvme_read(fd, nsid, slba, nlb, 0, 0, 0, 0, 0, data_len, buffer, metadata_len, NULL);
-    if (ret < 0) {
-        return ret;
-    }
+    int ret = nvme_read(fd, nsid, slba, nlb, 0, 0, 0, 0, 0, data_len, buffer, metadata_len, NULL);
 
-    return 0;
+    return ret;
     //return -ENOSYS;
 }
 
@@ -261,34 +257,38 @@ __u32 data_len = buf_size;
 void *metadata = NULL;
 __u32 metadata_len = 0;
 
-return nvme_write(fd, nsid, slba, numbers, control, dsm, dspec, reftag, apptag, appmask, data_len, buffer, metadata_len, metadata);
+return nvme_write(fd, nsid, slba, numbers-1, control, dsm, dspec, reftag, apptag, appmask, data_len, buffer, metadata_len, metadata);
 	//return -ENOSYS;
 }
 
-int ss_zns_device_zone_reset(int fd, uint32_t nsid, uint64_t slba) {
+//int ss_zns_device_zone_reset(int fd, uint32_t nsid, uint64_t slba) {
     //FIXME:
-    return -ENOSYS;
+  //  return -ENOSYS;
+//}
+
+int ss_zns_device_zone_reset(int fd, uint32_t nsid, uint64_t slba) {
+
+    int ret = nvme_zns_mgmt_send(fd, nsid ,slba, 0, NVME_ZNS_ZSA_RESET, 1, 0);
+    //FIXME:
+    return ret;
 }
 
 // this does not take slba because it will return that
 int ss_zns_device_zone_append(int fd, uint32_t nsid, uint64_t zslba, int numbers, void *buffer, uint32_t buf_size, uint64_t *written_slba){
     
-	__u32 data_len = numbers * 512;
+	__u32 data_len = buf_size;
     __u32 metadata_len = 0;
-    __u64 result;
 
-    int res = nvme_zns_append(fd, nsid, zslba, numbers, 0, 0, 0, 0, data_len, buffer, metadata_len, NULL, &result);
+    int res = nvme_zns_append(fd, nsid, zslba, numbers, 0, 0, 0, 0, data_len, buffer, metadata_len, NULL, reinterpret_cast<__u64*>(written_slba));
 
-    if (res == 0 && written_slba != NULL) {
-        *written_slba = result;
-    }
 
     return res;
 	//return -ENOSYS;
 }
 
 void update_lba(uint64_t &write_lba, const uint32_t lba_size, const int count){
-    assert(false);
+   // write_lba = write_lba + ( lba_size * count );
+   write_lba += count;
 }
 
 // see 5.15.2.2 Identify Controller data structure (CNS 01h)

@@ -12,8 +12,22 @@ cstdio
 cinttypes
 -
 
-/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m1/device.cpp
-iostream
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.h
+cstdint
+-
+string
+-
+
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m1/device.h
+libnvme.h
+-
+
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m1/m1.cpp
+cstdio
+-
+cstdlib
+-
+cerrno
 -
 libnvme.h
 -
@@ -25,8 +39,6 @@ device.h
 /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m1/device.h
 ../common/nvmeprint.h
 /root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/nvmeprint.h
-
-/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/m1/device.h
-libnvme.h
--
+../common/utils.h
+/root/zns_ssd_flash_trasfer_layer/msc-stosys-sramework/src/common/utils.h
 

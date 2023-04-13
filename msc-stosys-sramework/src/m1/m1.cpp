@@ -79,6 +79,7 @@ static int test1_lba_io_test(int zfd, uint32_t nsid, struct zone_to_test *ztest)
     // step 4: writes 1x LBAs
     // step 5: read all 5 and match the pattern
     do {
+	printf("loop started.\n");
         // step 1: reset the whole zone
         uint64_t write_lba = le64_to_cpu(ztest->desc.zslba), zone_slba = le64_to_cpu(ztest->desc.zslba);
         uint64_t returned_slba = -1;
@@ -93,8 +94,10 @@ static int test1_lba_io_test(int zfd, uint32_t nsid, struct zone_to_test *ztest)
         write_pattern(w_pattern2 + ztest->lba_size_in_use, ztest->lba_size_in_use);
         ret = ss_nvme_device_write(zfd, nsid, le64_to_cpu(ztest->desc.zslba), 2, w_pattern2, 2 * ztest->lba_size_in_use);
         assert(ret == 0);
+	printf("returned_slba after first write: %lx and write_lba: %lx\n",returned_slba , write_lba );
         printf("zone is written 2x successfully \n");
         update_lba(write_lba, ztest->lba_size_in_use, 2);
+	printf("returned_slba after first update_lba: %lx and write_lba: %lx\n",returned_slba , write_lba );
         // step 3: append 2x LBA blocks
         ret = ss_zns_device_zone_append(zfd, nsid, zone_slba, 2, w_pattern2,
                                         2 * ztest->lba_size_in_use, &returned_slba);
@@ -104,10 +107,13 @@ static int test1_lba_io_test(int zfd, uint32_t nsid, struct zone_to_test *ztest)
         // returned pointer is where the data is appended (not where the write pointer _is_)
         assert(returned_slba == write_lba);
         // move the returned pointer to the +2 LBAs - we can now use the returned pointer
-        update_lba(returned_slba, ztest->lba_size_in_use, 2);
-        // step 4: write the 5th 1x LBA using the returned LBA from the append
+        printf("returned_slba before update: %lx\n",returned_slba);
+	update_lba(returned_slba, ztest->lba_size_in_use, 2);
+	printf("returned_slba after update: %lx\n",returned_slba);
+	// step 4: write the 5th 1x LBA using the returned LBA from the append
         ret = ss_nvme_device_write(zfd, nsid, returned_slba, 1, w_pattern, ztest->lba_size_in_use);
-        assert(ret == 0);
+        printf("ret: %d\n", ret);
+	assert(ret == 0);
         printf("The final write is ok too, we should be at 5x LBAs writes now \n");
         // read all 5 blocks and match their patterns
         char *r_pattern2 = (char *) calloc (5, ztest->lba_size_in_use);
